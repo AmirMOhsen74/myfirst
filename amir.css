@@ -6,11 +6,40 @@ body{
     font-family: 'Cairo', sans-serif;
     background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.12.jpg);
 }
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
 .hed{
     background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.11.jpg);
     background-size: cover;
     padding: 1px;
     color: aliceblue;
+}
+@media (max-width: 767px) {
+    .hed,
+    .sec,
+    .foo,
+    .img{
+    font-size: 60px;
+    }
+    .text {
+    margin-top: -20px;
+    }
 }
 .sec{
     background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.12.jpg);
@@ -60,9 +89,17 @@ color: aliceblue;
     margin: 8%;
 }
 .vid{
-   width: 100%;
-   margin-top: 5%;
-   margin-bottom: 5%;
+width: 100%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+@media (max-width: 767px) {
+    .vid,
+    tablr,
+    .in {
+    flex-direction: column;
+    text-align: center;
+    }
 }
 table{
     width: 70%;
@@ -137,23 +174,23 @@ h3{
     filter: blur(0);
 }
 
-  .container {
+.container {
     margin: 40px 500px;
     width: 200px;
     perspective: 600px;
-  }
-  .box {
+}
+.box {
     position: relative;
     width: 200px;
     height: 400px;
     transform-style: preserve-3d;
     transition: transform 2s;
     transform-origin: right ;
-  }
-  .box:hover {
+}
+.box:hover {
     transform: translateX(50%) rotateY(-180deg);
-  }
-  .box .face {
+}
+.box .face {
     position: absolute;
     width: 250%;
     height: 70%;
@@ -165,11 +202,16 @@ h3{
     color: rgb(255, 255, 255);
 
     backface-visibility: hidden;
-  }
-  .box .front {
+}
+.box .front {
     background-image: url(./mid/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
     background-size: cover;
-  }
-  .box .back {
+}
+.box .back {
     transform: rotateY(180deg);
-  }
+}
+@media (max-width: 1199px) {
+    .back {
+    display: none;
+    }
+}
