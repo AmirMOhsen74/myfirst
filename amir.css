@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.12.jpg);
+}
+.hed{
+    background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.11.jpg);
+    background-size: cover;
+    padding: 1px;
+    color: aliceblue;
+}
+.sec{
+    background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.12.jpg);
+    color: aliceblue;
+    padding: 1px;
+    background-size: cover;
+    visibility: visible;
+}
+.foo{
+    background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.11.jpg);
+    background-size: cover;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.nav{
+    background-image: url(./mid/WhatsApp\ Image\ 2023-06-06\ at\ 20.03.12.jpg);
+    color: #fff;
+    background-size: auto;
+    padding: 10px;
+    color: white;
+}
+.text{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: #fff
+}
+.spe{
+background-color: rgba(17, 16, 16, 0.704);
+text-align: center;
+font-size: larger;
+border-style: inherit;
+color: aliceblue;
+
+}
+.flot{
+    float: left;
+    width: 82%;
+    margin: 1%;
+}
+.img{
+    width: 90%%;
+    margin: 8%;
+}
+.vid{
+   width: 100%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+table{
+    width: 70%;
+    padding: 1px;
+    border: 2px solid rgb(199, 184, 187);
+    border-radius: 20px;
+    margin-left: 15%;
+    margin-top: 5%;
+    box-shadow:0px 0px 11px -1px white;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: #ffffff
+}
+table td{
+    background-color: rgba(50, 48, 67, 0.549);
+    border-radius: 15px;}
+table thead td{
+    background-color: rgba(0, 139, 139, 0.447);
+    font-weight: bold;
+    border-radius: 15px;
+}
+a{
+    color:rgb(214, 126, 44);
+    background-color: #131b3a;
+    text-align: 50%;
+    text-decoration: none;
+    border: 1px solid #16104cb3;
+    border-radius: 6px;
+    justify-content: center;
+    flex-grow: 3;
+}
+a:hover{
+    color: brown;
+}
+.in{
+    border: 3px solid rgb(20, 18, 32);
+    border-radius: 10px;
+}
+.in:focus{
+    border-color: rgba(33, 36, 178, 0.893);
+    outline: none;
+}
+::selection{
+    background-color: black;
+    color: rgb(245, 226, 20);
+}
+audio{
+    position: absolute;
+    right: 10;
+}
+h3{
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-left: 15%;
+    border-right: 15%;
+    border-radius: 70px;
+    box-shadow:0px 0px 14px 2px white;
+    background-color: #434962c1;
+
+}
+.form{
+    box-shadow:0px 4px 11px -2px rgb(0, 0, 0);
+}
+.img{
+    filter: blur(5px);
+}
+.img:hover{
+    filter: blur(0);
+}
+
+  .container {
+    margin: 40px 500px;
+    width: 200px;
+    perspective: 600px;
+  }
+  .box {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    transform-origin: right ;
+  }
+  .box:hover {
+    transform: translateX(50%) rotateY(-180deg);
+  }
+  .box .face {
+    position: absolute;
+    width: 250%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+    backface-visibility: hidden;
+  }
+  .box .front {
+    background-image: url(./mid/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+    background-size: cover;
+  }
+  .box .back {
+    transform: rotateY(180deg);
+  }
